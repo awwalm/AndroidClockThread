@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+<!-- xmlns:iumw="http://schemas.android.com/apk/res/com.timtak.widget"-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:timtak="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- this could optionally be set to display 24 hour time-->
+    <!-- @TODO: FIRST CLOCK; optionally format this layout -->
+    <org.iumw.widget.AnalogChronometer
+        android:id="@+id/chronometer"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        timtak:dial="@drawable/clock_dial"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/resumeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resume"
+            android:onClick="startChronometer"/>
+
+        <Button
+            android:id="@+id/suspendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suspend"
+            android:onClick="pauseChronometer"/>
+    </LinearLayout>
+
+
+    <!-- @TODO: SECOND CLOCK; optionally format this layout-->
+    <org.iumw.widget.AnalogChronometer
+        android:id="@+id/chronometer2"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        timtak:dial="@drawable/clock_dial"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/resumeButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resume"
+            android:onClick="startSecondChronometer"/>
+
+        <Button
+            android:id="@+id/suspendButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suspend"
+            android:onClick="pauseSecondChronometer"/>
+    </LinearLayout>
+
+
+
+    <!-- @TODO: THIRD CLOCK; optionally format this layout-->
+    <org.iumw.widget.AnalogChronometer
+        android:id="@+id/chronometer3"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        timtak:dial="@drawable/clock_dial"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:id="@+id/resumeButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resume"
+            android:onClick="startThirdChronometer"/>
+
+        <Button
+            android:id="@+id/suspendButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suspend"
+            android:onClick="pauseThirdChronometer"/>
+    </LinearLayout>
+
+
+    <!-- collective layout for controlling all clocks at once buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/resumeButtonAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resume All"
+            android:onClick="startAllChronometers"/>
+
+        <Button
+            android:id="@+id/suspendButtonAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suspend All"
+            android:onClick="pauseAllChronometers"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
