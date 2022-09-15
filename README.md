@@ -2,9 +2,15 @@
 
 Two applications - each displaying three clocks with buttons to start and stop them. One is written with synchronization and multithreading techniques.
 
-### Problem Statement
+### Problem Description
 
 _Write a Java application<span title="Fun Fact">[^1]</span> that displays three clocks in a group, with control buttons to start and stop all of them. Then, rewrite the application by applying threading concept to control the clock animation. Run the applications. Compare the two applications with and without synchronization to see its effect._
+
+![jpg](Screenshots/Picture1.jpg)
+
+### Solution Sample
+
+![jpg](Screenshots/Picture2.png){ width="200px" }
 
 ## Getting Started
 
