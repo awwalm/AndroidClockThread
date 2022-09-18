@@ -70,4 +70,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 <!-- Footnotes formatted by GitHub to appear here -->
 
 [^1]: **Fun Fact** - The requirement for this project was in pure Java, but I leveraged my Android programming skills to come up with a unique solution.
-[^2]: See the synchronized version of [`ChronometerActivity.java`](AndroidClockThread/SystemSoftwareThreaded/app/src/main/java/com/iumw/widget/ChronometerActivity.java).
+[^2]: See the synchronized version of [`ChronometerActivity.java`](SystemSoftwareThreaded/app/src/main/java/com/iumw/widget/ChronometerActivity.java).
