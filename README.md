@@ -12,7 +12,7 @@ _Write a Java application<span title="Fun Fact">[^1]</span> that displays three 
 
 ![png](Screenshots/Picture2.png)
 
-### Manager Multiple Threads with the Binder IPC
+### Managing Multiple Threads with the Binder IPC
 
 ![png](Screenshots/SideBySide.png)
 
