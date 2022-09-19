@@ -18,7 +18,7 @@ _Write a Java application<span title="Fun Fact">[^1]</span> that displays three 
 
 Here, the regular version of the clock app (left) generates two Binder Threads basically in coordination for the UI thread and the background thread only. In the threaded and synchronized version (right), it creates three binder threads. The other threads shown are default and mandatory process threads for the operating system to maintain. But how exactly do Binder Threads work?
 
-Binder thread is used in Android Service Binding with Interprocess Communication (IPC). Most of the time you will encounter this concept in Service calls with interfaces defined by Android Interface Definition Language (AIDL).
+Binder thread is used in Android Service Binding with **Interprocess Communication (IPC)**. Most of the time you will encounter this concept in Service calls with interfaces defined by Android Interface Definition Language (AIDL).
 
 In the AIDL case, Service calls are executed by threads maintained by a default Thread Pool created with your application. Those threads are called Binder Threads. This grants the Service the ability to work on multiple calls happening at the same time.
 
@@ -39,7 +39,7 @@ Here's a breakdown of binder threads' influence when multithreading on the Andro
 - So that when a new thread request is made from the program, the Android operating system detects the call and check for a pre-existing thread that is bound to a similarly executing process.
 
 
-- Then it takes the information or command intended to be carried out from the new thread request and passes it to the binder thread using an Handler object (a core Android wrapper for the Java Thread class). 
+- Then it takes the information or command intended to be carried out from the new thread request and passes it to the binder thread using an **Handler** object (a core Android wrapper for the Java Thread class). 
 
 
 - At this stage, a thread would normally terminate after completion and as such a **message queuing** mechanism is employed to mitigate this.
