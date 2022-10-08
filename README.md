@@ -10,7 +10,7 @@ _Write a Java application<span title="Fun Fact">[^1]</span> that displays three 
 
 ### Solution Sample
 
-![png](Screenshots/Picture2.png)
+<img src="Screenshots/Picture2.png" width="300"/>
 
 ### Managing Multiple Threads with the Binder IPC
 
