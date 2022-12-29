@@ -3,25 +3,6 @@
  * AT INTERNATIONAL UNIVERSITY OF MALAYA-WALES. (c) 2020.
  */
 
-/**
- * @author: Awwal Mohammed
- * subject: BCS 613 System Software
- * project title: ${enclosing_project}
- * Description:
- *   ChronometerActivity.java source program for
- *   starting and stopping all three clocks.
- *   This particular version uses Multithreading by implementing the features in
- *   the core Android {@link android.os.Handler} class (accessible by
- *   pressing CTRL+B in Android Studio) which is an encapsulation of the core Java
- *   {@link java.lang.Thread} class. Subsequently, a {@link android.os.Looper} object is
- *   used for inter-thread communication with the {@link android.os.MessageQueue} utility class.
- *   A {@link java.lang.Runnable} instance is eventually used to execute all Handler threads.
- *   Synchronization features are not required but will be added to meet assignment requirements.
- * @date: 10-04-20	// creation date
- * @date: ${date} 	// last compiled date
- * @// FIXME: 4/14/2020 settle remaining javadoc comments... or not
- **/
-
 package com.iumw.widget;
 
 import android.app.Activity;
@@ -32,6 +13,29 @@ import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+/**
+ * Description:
+ * ChronometerActivity.java source program for starting and stopping all three clocks.
+ * This particular version uses Multithreading by implementing the features in
+ * the core Android {@link android.os.Handler} class (accessible by
+ * pressing CTRL+B in Android Studio) which is an encapsulation of the core Java
+ * {@link java.lang.Thread} class.
+ *
+ * <p>Subsequently, a {@link android.os.Looper} object is
+ * used for inter-thread communication with the {@link android.os.MessageQueue} utility class.
+ * A {@link java.lang.Runnable} instance is eventually used to execute all Handler threads.
+ * Synchronization features are not required but will be added to meet assignment requirements.
+ *
+ * @author Awwal Mohammed
+ * subject: BCS 613 System Software
+ * project title: ${enclosing_project}
+
+ * @since 10-04-20	// creation date
+ * @since ${DATE} 	// last compiled date
+ * FIXME: 14-04-2020 settle remaining javadoc comments... or not
+ * FIXED on 29-12-2022
+ */
 
 public class ChronometerActivity extends Activity
 {

@@ -3,19 +3,6 @@
  * IN INTERNATIONAL UNIVERSITY OF MALAYA-WALES.
  */
 
-/**
- * @author: Awwal Mohammed
- * co-author: Zarina Usmanova
- * subject: BCS 613 System Software
- * project title: ${enclosing_project}
- * Description: ChronometerActivity.java source program for
- * starting and stopping all three clocks
- * @date: 10-04-20	// creation date
- * @date: ${date} 	// last compiled date for Dr. Ashley to verify
- * ${iso:date('yyyy-MM-dd HH:mm:ss Z')}
-**/
-
-
 package org.iumw.widget;
 
 import android.app.Activity;
@@ -23,8 +10,16 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
-
 import com.timtak.widget.R;
+
+/**
+ * @see ChronometerActivity : source program for starting and stopping all three clocks.
+ * This is the standard and non-threaded version of the clock app.
+ *
+ * @author Awwal Mohammed
+ * @since 10-04-20	// creation date
+ * @since ${DATE} 	// last compiled date for Dr. Ashley to verify
+ */
 
 public class ChronometerActivity extends Activity
 {
