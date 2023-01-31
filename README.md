@@ -67,6 +67,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 * Hat tip to anyone whose code was used
 
+## Issues
+- [x] https://github.com/awwalm/AndroidClockThread/issues/1
+
 <!-- Footnotes formatted by GitHub to appear here -->
 
 [^1]: **Fun Fact** - The requirement for this project was in pure Java, but I leveraged my Android programming skills to come up with a unique solution.
